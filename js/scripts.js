@@ -40,9 +40,10 @@ $( document ).ready(function() {
     var productCount = 0;
 
     var nextProduct = function(){
-      console.log('hey');
+        
       productCount++;
       $('#info-block-'+productCount).addClass('fadein');
+      // $('#info-block-'+productCount).removeClass('fadein');
     };
 
     
