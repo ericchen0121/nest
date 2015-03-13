@@ -22,15 +22,18 @@ html, body {
   left: 50%;
   transform: translate(-50%, 0%);
   z-index: 20;
-  padding: 12px 50px;
+  
   background-color: #fff;
+}
+.nest-logo img{
+  width: 90px;
 }
 
 .hud {
   position: fixed;
   top: 0;
   right: 0;
-  background-color: rgba(255,255,255,0.2);
+  
   height: auto;
   width: 20%;
   z-index: 20;
@@ -39,7 +42,17 @@ html, body {
 .top-block {
   padding: 16px;
   box-sizing: border-box;
+  background-color: rgba(255,255,255,0.2);
 }
+
+#info-block-1, #info-block-2, #info-block-3 {
+  opacity: 0;
+}
+
+#info-block-1.fadein, #info-block-2.fadein,#info-block-3.fadein{
+  opacity: 1;
+}
+
 .item-header {
   text-align: left;
   font-size: 16px;

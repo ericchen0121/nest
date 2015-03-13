@@ -37,13 +37,17 @@ $( document ).ready(function() {
     //     pauseVideo();
     //   }
     // },false);
+    var productCount = 0;
 
     var nextProduct = function(){
-      console.log('asdf');
+      console.log('hey');
+      productCount++;
+      $('#info-block-'+productCount).addClass('fadein');
     };
-    console.log('hery');
+
+    
      // UI click events
     // pause.on( "click", pauseVideo );
     // $('.video').on("click", nextScene);
-    $('.hud').on("click", nextProduct);
+    $('.nest-logo').on("click", nextProduct);
 });
