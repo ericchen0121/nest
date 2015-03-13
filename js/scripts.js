@@ -38,14 +38,29 @@ $( document ).ready(function() {
     //   }
     // },false);
     var productCount = 0;
+    var numProducts = 3;
 
-    var nextProduct = function(){
-        
+    var nextProduct = function() {
+      //UGLY HARDCODED SOLUTION   
       productCount++;
+
       $('#info-block-'+productCount).addClass('fadein');
-      // $('#info-block-'+productCount).removeClass('fadein');
+
+      if(productCount === 3){
+        $('#info-block-'+1).removeClass('fadein');
+      }
+      if(productCount === 4){
+        $('#info-block-'+2).removeClass('fadein');
+        $('#info-block-'+1).addClass('fadein');
+      }
+      if(productCount === 5){
+        $('#info-block-'+3).removeClass('fadein');
+        $('#info-block-'+2).addClass('fadein');
+        productCount = 0;
+      }
     };
 
+    
     
      // UI click events
     // pause.on( "click", pauseVideo );
