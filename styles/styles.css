@@ -45,6 +45,18 @@ html, body {
   z-index: 20;
 }
 
+.hud .top-title {
+  height: 40px;
+  padding-left: 20px;
+  background-color: gray;
+  color: white;
+  padding-top: 20px;
+}
+
+.hud .top-gear {
+
+}
+
 .top-block {
   padding: 16px;
   box-sizing: border-box;

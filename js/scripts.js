@@ -38,14 +38,18 @@ $( document ).ready(function() {
     //   }
     // },false);
     var productCount = 0;
-    var numProducts = 3;
+    var productList = [1,2,3];
+    var numProduct = 3;
 
     var nextProduct = function() {
-      //UGLY HARDCODED SOLUTION   
+
+      //UGLY HARDCODED SOLUTION  
+      
       productCount++;
 
+      /*
       $('#info-block-'+productCount).addClass('fadein');
-      
+
     };
 
      // UI click events
