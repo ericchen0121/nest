@@ -47,7 +47,7 @@ $( document ).ready(function() {
       
       productCount++;
 
-      /*
+      
       $('#info-block-'+productCount).addClass('fadein');
 
     };
