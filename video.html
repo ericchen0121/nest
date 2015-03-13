@@ -1,0 +1,28 @@
+<!DOCTYPE html> 
+<html> 
+<body> 
+	<div style="text-align:center">   
+  		<video id="video1" width="420" height="420">
+    		<source src="small.mp4" type="video/mp4">
+    		<!-- <source src="OGG FILE GOES HERE" type="video/ogg"> -->
+  		</video>
+  		<br>
+  		<button onclick="playPause()">Play/Pause</button> 
+	</div> 
+
+	<script> 
+		var myVideo = document.getElementById("video1"); 
+
+		function playPause() { 
+    		if (myVideo.paused) 
+        		myVideo.play(); 
+    		else 
+        		myVideo.pause(); 
+			} 
+	</script> 
+
+	</body> 
+	
+	<script src="./bower_components/jquery/dist/jquery.js"></script>
+  	<script src="./js/scripts.js"></script> 
+</html>
