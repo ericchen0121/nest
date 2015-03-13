@@ -3,7 +3,7 @@ $( document ).ready(function() {
     var vid = $('.video')[0];
     var pause = $('.pause');
     var play = $('.play');
-
+    var time = 0;
 
     //video movement function
 
@@ -16,10 +16,28 @@ $( document ).ready(function() {
     var playVideo = function() {
       vid.play();
     };
-    //.video movement function
 
-    // UI click events
+
+    var sceneCounter = 0;
+    var timestamps = [2, 5,20,30,40];
+
+    var nextScene = function() {
+      sceneCounter++
+      playVideo();
+    };
+
+
+    playVideo();
+    vid.addEventListener('timeupdate',function(event){
+      time = vid.currentTime;
+      if(time <= timestamps[sceneCounter]){
+        playVideo();
+      } else {
+        pauseVideo();
+      }
+    },false);
+
+     // UI click events
     pause.on( "click", pauseVideo );
-    play.on( "click", playVideo );
-
+    play.on("click", nextScene);
 });
