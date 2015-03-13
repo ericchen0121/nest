@@ -13,13 +13,17 @@ html, body {
   background-size: cover;
   z-index: 10;
 }
+.content {
+    height: 100%;
+}
+
 .invisible-layer {
   position: absolute;
   top: 0%;
   left: 0%;
-  width: 100%;
+  width: 80%;
   height: 100%;
-  z-index: 20;
+  z-index: -1;
 }
 
 .nest-logo{
@@ -45,6 +49,21 @@ html, body {
   z-index: 20;
 }
 
+.zindexplus {
+  z-index: 10000;
+}
+
+.blue-circle {
+  position: absolute;
+  top: 50px;
+  left: -40px;
+  background-color: blue;
+  width: 20px;
+  height: 20px;
+  border-radius: 15px;
+  background: #03abd2;
+}
+
 .hud .top-title {
   height: 40px;
   padding-left: 20px;
@@ -53,17 +72,17 @@ html, body {
   padding-top: 20px;
 }
 
-.hud .top-gear {
-
-}
-
 .top-block {
-  padding: 16px;
+  position: relative;
+  margin-left: 80px;
+  margin-right: 20px;
+  padding: 15px 0;
   box-sizing: border-box;
   background-color: rgba(255,255,255,0.2);
 }
 
 #info-block-1, #info-block-2, #info-block-3 {
+  transition: opacity .35s ease-in;
   opacity: 0;
 }
 

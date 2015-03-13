@@ -58,7 +58,7 @@
             break;
           }
         });
-        u.initPlugin(jQuery("#unityPlayer")[0], "dropcityweb1.2.unity3d");
+        u.initPlugin(jQuery("#unityPlayer")[0], "dropcityweb1.4.unity3d");
       });
     -->
     </script>
@@ -112,23 +112,24 @@
     }
     div#unityPlayer {
       cursor: default;
-      height: 600px;
+      height: 100%;
     
     }
     -->
     </style>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.css">
+    <!-- <link rel="stylesheet" href="styles/font-awesome/css/font-awesome.css"> -->
   </head>
   <body>
     <div class="nest-logo">
       <img src="assets/Nest-Logo.jpg" />
     </div>
-    <div class='invisible-layer'>
-    </div>
     <div class="content">
       <div id="unityPlayer" class="video">
-
       </div>
+    </div>
+    <div class='invisible-layer'>
     </div>
     <div class="zoom">
       <ul>
@@ -137,27 +138,30 @@
       </ul>
     </div>
     <div class="hud">
-      <div class='top-title'>
-        Learn With Nest
+      <div class='hud-bar'>
+        <div class='top-title'>
+          Learn With Nest
+        </div>
+        <div class='top-gear'>
+          <i class='fa fa-cog'></i>
+        </div>
       </div>
       <div class="top-block" id="info-block-1" >
-
+        <div class='blue-circle'></div>
         <h3 class="item-header">Nest Protect</h3>
-        <p class="item-1-para">Get a heads-up! If there’s only a little smoke, like you’ve just burned toast, it will glow yellow and give you a friendly Heads-Up so you can check on things.</p>
+        <p class="item-1-para">Get a heads-up! If there’s only a little smoke, like you’ve just burned toast, it will glow yellow.</p>
       </div>
 
       <div class="top-block" id="info-block-2">
+        <div class='blue-circle'></div>
         <h3 class="item-header">Nest Thermostat</h3>
         <p class="item-1-para">Get a heads-up! If there’s only a little smoke, like you’ve just burned toast, it will glow yellow and give you a friendly heads-up so you can check on things. You can also get access to your smoke and CO alarm from your phone.</p>
       </div>
 
       <div class="top-block three" id="info-block-3">
+        <div class='blue-circle'></div>
         <h3 class="item-header">Works With Nest - Automotive</h3>
         <p class="item-1-para">Get a heads-up! If there’s only a little smoke, like you’ve just burned toast, it will glow yellow and give you a friendly Heads-Up so you can check on things.</p>
-      </div>
-
-      <div class='top-gear'>
-        <i class='fa-gear'></i>
       </div>
 
       <div class="action-button">Add To Your Configuration</div>

@@ -41,13 +41,9 @@ $( document ).ready(function() {
     var productList = [1,2,3];
     var numProduct = 3;
 
+    // hardcoded solution
     var nextProduct = function() {
-
-      //UGLY HARDCODED SOLUTION  
-      
       productCount++;
-
-      
       $('#info-block-'+productCount).addClass('fadein');
 
     };
@@ -68,6 +64,13 @@ $( document ).ready(function() {
     $('.homepage-bg').on("click", fadeout)
 });
 
+window.onkeydown = function(e) {
+  $('.invisible-layer').addClass('zindexplus');
+}
+
+window.onkeyup = function(e) {
+  $('.invisible-layer').removeClass('zindexplus');  
+}
 
 
 
