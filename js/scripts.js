@@ -24,6 +24,7 @@ $( document ).ready(function() {
     var nextScene = function() {
       sceneCounter++
       playVideo();
+      console.log('hey')
     };
 
 
@@ -39,5 +40,5 @@ $( document ).ready(function() {
 
      // UI click events
     pause.on( "click", pauseVideo );
-    play.on("click", nextScene);
+    $('.video').on("click", nextScene);
 });
