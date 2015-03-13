@@ -5,6 +5,7 @@
     <title>Unity Web Player | New Unity Project</title>
     <link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <script type='text/javascript' src='https://ssl-webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/jquery.min.js'></script>
+    <script type='text/javascript' src='https://ssl-webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/jquery.min.js'></script>
     <script type="text/javascript">
     <!--
     var unityObjectUrl = "http://webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/UnityObject2.js";
@@ -57,10 +58,11 @@
             break;
           }
         });
-        u.initPlugin(jQuery("#unityPlayer")[0], "dropcityweb.unity3d");
+        u.initPlugin(jQuery("#unityPlayer")[0], "dropcityweb1.2.unity3d");
       });
     -->
     </script>
+
     <style type="text/css">
     <!--
     body {
@@ -126,6 +128,12 @@
 
       </div>
     </div>
+    <div class="zoom">
+      <ul>
+        <li>+</li>
+        <li class="minus">-</li>
+      </ul>
+    </div>
     <div class="hud">
 
       <div class="top-block" id="info-block-1" >
@@ -146,7 +154,7 @@
       </div>
 
 
-
+      <div class="action-button">Add To Your Configuration</div>
 
     </div>
       <script src="./bower_components/jquery/dist/jquery.js"></script>

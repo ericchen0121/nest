@@ -32,7 +32,7 @@ html, body {
   top: 0;
   right: 0;
   
-  height: auto;
+  height: 100%;
   width: 20%;
   z-index: 20;
 }
@@ -61,3 +61,52 @@ html, body {
   font-size: 13px;
 
 }
+
+.homepage-bg {
+  background: url(../assets/homepage-bg.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.zoom {
+  position: fixed;
+  z-index: 20;
+  top: 10%;
+  
+}
+.zoom ul{
+  list-style-type: none;
+}
+.zoom ul li {
+  font-size: 24px;
+  padding: 6px;
+  background: #03abd2;
+  color: #fff;
+  width: 24px;
+  height: 32px;
+  border-radius: 12px;
+  
+}
+.zoom .minus {
+  top: -6px;
+}
+.action-button {
+  background: #03abd2;
+  color: #fff;
+  border-radius: 6px;
+  height: 30px;
+  padding: 10px 8px 8px 8px;
+  width: 90%;
+  margin: 0 auto;
+  bottom: 10%;
+  position: absolute;
+}
+
+
+
+
+
+
+

@@ -51,4 +51,20 @@ $( document ).ready(function() {
     // pause.on( "click", pauseVideo );
     // $('.video').on("click", nextScene);
     $('.nest-logo').on("click", nextProduct);
+
+
+    //homepage
+    var fadeout = function() {
+      console.log('fade out');
+      $('.homepage-bg').fadeOut( "slow", function() {
+        window.location.replace("file:///Users/matthew.harwood/workspace/akqa/nest2/nest/index.html");
+      });
+    };
+    $('.homepage-bg').on("click", fadeout)
 });
+
+
+
+
+
+
