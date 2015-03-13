@@ -3,26 +3,50 @@ html, body {
   padding: 0;
   height: 100%;
   position: relative;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 
 
 .video {
-  position: fixed; right: 0; bottom: 0; top:7%;
+  position: fixed; right: 0; bottom: 0; top:0;
   min-width: 100%; min-height: 60%;
   width: auto; height: auto; z-index: -100;
   background-size: cover;
   z-index: 10;
 }
 
+.nest-logo{
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  z-index: 20;
+  padding: 12px 50px;
+  background-color: #fff;
+}
 
 .hud {
   position: fixed;
   top: 0;
   right: 0;
-
+  background-color: rgba(255,255,255,0.2);
   height: 40%;
   width: 20%;
   z-index: 20;
-  background-color: #fff;
+}
+
+.top-block {
+  padding: 16px;
+  box-sizing: border-box;
+}
+.item-header {
+  text-align: left;
+  font-size: 16px;
+  text-shadow: 1px 1px rgba(0,0,0,0.2);
+}
+.item-1-para {
+  text-align: left;
+  font-size: 13px;
+
 }
