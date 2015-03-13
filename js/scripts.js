@@ -38,12 +38,16 @@ $( document ).ready(function() {
     //   }
     // },false);
     var productCount = 0;
-    var numProducts = 3;
+    var productList = [1,2,3];
+    var numProduct = 3;
 
     var nextProduct = function() {
-      //UGLY HARDCODED SOLUTION   
+
+      //UGLY HARDCODED SOLUTION  
+      
       productCount++;
 
+      /*
       $('#info-block-'+productCount).addClass('fadein');
 
       if(productCount === 3){
@@ -58,6 +62,37 @@ $( document ).ready(function() {
         $('#info-block-'+2).addClass('fadein');
         productCount = 0;
       }
+      */
+      
+
+      /*
+      currentTrack = 0; 
+      // add 1
+      $('#info-block-'+productList[currentTrack]).addClass('fadein');
+      currentTrack++;
+    */
+      
+     /*
+      if((currentTrack % 1) === 0) {
+        // add 2
+        $('#info-block-'+productList[1]).addClass('fadein');
+      }
+      
+      if((currentTrack % 2) === 1) {
+        // remove 1
+        $('#info-block-'+productList[0]).removeClass('fadein');
+        // add 3
+        $('#info-block-'+productList[2]).addClass('fadein');
+      }
+
+      if((currentTrack % 3) === 2) {
+        // remove 3
+        $('#info-block-'+productList[2]).removeClass('fadein');
+        // add 1
+        $('#info-block-'+productList[0]).addClass('fadein');
+      }
+      */
+
     };
 
     
